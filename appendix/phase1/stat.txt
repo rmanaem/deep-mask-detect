@@ -1,0 +1,362 @@
+Distribution of classes: 
+ {'cloth': 396, 'n95': 354, 'n95v': 390, 'nfm': 474, 'srg': 342}
+
+learning_rate = 0.00146
+epochs = 20
+wd = 1e-6
+dropout = 0.1
+
+
+
+______________________ /CLASSIFICATION REPORTS\ _______________________
+
+              precision    recall  f1-score   support
+
+           0       0.50      0.11      0.18       109
+           1       0.44      0.04      0.07       110
+           2       0.00      0.00      0.00         0
+           3       0.00      0.00      0.00         0
+           4       0.00      0.00      0.00         0
+
+    accuracy                           0.07       219
+   macro avg       0.19      0.03      0.05       219
+weighted avg       0.47      0.07      0.12       219
+
+
+_________________________ /CONFUSION MATRIX\ __________________________
+
+[[12  5 44 17 31]
+ [12  4 34 14 46]
+ [ 0  0  0  0  0]
+ [ 0  0  0  0  0]
+ [ 0  0  0  0  0]]
+
+------------------------------- /Accuracy Score\ -------------------------------
+
+0.073
+
+
+
+# Bias
+
+
+0: female, east
+1: male, west
+
+____ / CLASSIFICATION REPORTS for Gender Category in n95 Class \ ____
+
+              precision    recall  f1-score   support
+
+           0       0.50      0.11      0.18       109
+           1       0.44      0.04      0.07       110
+           2       0.00      0.00      0.00         0
+           3       0.00      0.00      0.00         0
+           4       0.00      0.00      0.00         0
+
+    accuracy                           0.07       219
+   macro avg       0.19      0.03      0.05       219
+weighted avg       0.47      0.07      0.12       219
+
+-------------------------------- /CONFUSION MATRIX\ --------------------------------
+
+[[12  5 44 17 31]
+ [12  4 34 14 46]
+ [ 0  0  0  0  0]
+ [ 0  0  0  0  0]
+ [ 0  0  0  0  0]]
+
+------------------------------- /Accuracy Score\ -------------------------------
+
+0.073
+
+
+____ / CLASSIFICATION REPORTS for Gender Category in nfm Class \ ____
+
+              precision    recall  f1-score   support
+
+           0       0.28      0.04      0.07       125
+           1       1.00      0.02      0.05       216
+           2       0.00      0.00      0.00         0
+           3       0.00      0.00      0.00         0
+           4       0.00      0.00      0.00         0
+
+    accuracy                           0.03       341
+   macro avg       0.26      0.01      0.02       341
+weighted avg       0.74      0.03      0.05       341
+
+-------------------------------- /CONFUSION MATRIX\ --------------------------------
+
+[[  5   0   5 114   1]
+ [ 13   5   5 191   2]
+ [  0   0   0   0   0]
+ [  0   0   0   0   0]
+ [  0   0   0   0   0]]
+
+------------------------------- /Accuracy Score\ -------------------------------
+
+0.029
+
+
+____ / CLASSIFICATION REPORTS for Gender Category in n95v Class \ ____
+
+              precision    recall  f1-score   support
+
+           0       0.50      0.20      0.28        46
+           1       0.25      0.02      0.04        51
+           2       0.00      0.00      0.00         0
+           3       0.00      0.00      0.00         0
+           4       0.00      0.00      0.00         0
+
+    accuracy                           0.10        97
+   macro avg       0.15      0.04      0.06        97
+weighted avg       0.37      0.10      0.15        97
+
+-------------------------------- /CONFUSION MATRIX\ --------------------------------
+
+[[ 9  3 14  8 12]
+ [ 9  1 15 11 15]
+ [ 0  0  0  0  0]
+ [ 0  0  0  0  0]
+ [ 0  0  0  0  0]]
+
+------------------------------- /Accuracy Score\ -------------------------------
+
+0.103
+
+
+
+____ / CLASSIFICATION REPORTS for Gender Category in srg Class \ ____
+
+              precision    recall  f1-score   support
+
+           0       0.36      0.06      0.10       161
+           1       0.43      0.02      0.03       180
+           2       0.00      0.00      0.00         0
+           3       0.00      0.00      0.00         0
+           4       0.00      0.00      0.00         0
+
+    accuracy                           0.04       341
+   macro avg       0.16      0.01      0.03       341
+weighted avg       0.40      0.04      0.06       341
+
+-------------------------------- /CONFUSION MATRIX\ --------------------------------
+
+[[  9   4  21  18 109]
+ [ 16   3  31  16 114]
+ [  0   0   0   0   0]
+ [  0   0   0   0   0]
+ [  0   0   0   0   0]]
+
+------------------------------- /Accuracy Score\ -------------------------------
+
+0.035
+
+
+
+____ / CLASSIFICATION REPORTS for Gender Category in cloth Class \ ____
+
+              precision    recall  f1-score   support
+
+           0       0.48      0.33      0.39       185
+           1       0.40      0.02      0.04       188
+           2       0.00      0.00      0.00         0
+           3       0.00      0.00      0.00         0
+           4       0.00      0.00      0.00         0
+
+    accuracy                           0.17       373
+   macro avg       0.18      0.07      0.09       373
+weighted avg       0.44      0.17      0.21       373
+
+-------------------------------- /CONFUSION MATRIX\ --------------------------------
+
+[[61  6 38 32 48]
+ [67  4 42 34 41]
+ [ 0  0  0  0  0]
+ [ 0  0  0  0  0]
+ [ 0  0  0  0  0]]
+
+------------------------------- /Accuracy Score\ -------------------------------
+
+0.174
+
+
+____ / CLASSIFICATION REPORTS for Race Category in nfm Class \ ____
+
+              precision    recall  f1-score   support
+
+           0       0.22      0.05      0.08        83
+           1       1.00      0.02      0.04       258
+           2       0.00      0.00      0.00         0
+           3       0.00      0.00      0.00         0
+           4       0.00      0.00      0.00         0
+
+    accuracy                           0.03       341
+   macro avg       0.24      0.01      0.02       341
+weighted avg       0.81      0.03      0.05       341
+
+-------------------------------- /CONFUSION MATRIX\ --------------------------------
+
+[[  4   0   2  76   1]
+ [ 14   5   9 229   1]
+ [  0   0   0   0   0]
+ [  0   0   0   0   0]
+ [  0   0   0   0   0]]
+
+------------------------------- /Accuracy Score\ -------------------------------
+
+0.026
+
+
+____ / CLASSIFICATION REPORTS for Race Category in n95v Class \ ____
+
+              precision    recall  f1-score   support
+
+           0       0.71      0.20      0.31        76
+           1       0.25      0.05      0.08        21
+           2       0.00      0.00      0.00         0
+           3       0.00      0.00      0.00         0
+           4       0.00      0.00      0.00         0
+
+    accuracy                           0.16        97
+   macro avg       0.19      0.05      0.08        97
+weighted avg       0.61      0.16      0.26        97
+
+-------------------------------- /CONFUSION MATRIX\ --------------------------------
+
+[[15  3 26 13 19]
+ [ 6  1  4  5  5]
+ [ 0  0  0  0  0]
+ [ 0  0  0  0  0]
+ [ 0  0  0  0  0]]
+
+------------------------------- /Accuracy Score\ -------------------------------
+
+0.165
+
+
+____ / CLASSIFICATION REPORTS for Race Category in n95 Class \ ____
+
+              precision    recall  f1-score   support
+
+           0       0.81      0.10      0.17       174
+           1       0.11      0.02      0.04        45
+           2       0.00      0.00      0.00         0
+           3       0.00      0.00      0.00         0
+           4       0.00      0.00      0.00         0
+
+    accuracy                           0.08       219
+   macro avg       0.18      0.02      0.04       219
+weighted avg       0.67      0.08      0.15       219
+
+-------------------------------- /CONFUSION MATRIX\ --------------------------------
+
+[[17  8 59 27 63]
+ [ 4  1 18  5 17]
+ [ 0  0  0  0  0]
+ [ 0  0  0  0  0]
+ [ 0  0  0  0  0]]
+
+------------------------------- /Accuracy Score\ -------------------------------
+
+0.082
+
+
+____ / CLASSIFICATION REPORTS for Race Category in srg Class \ ____
+
+              precision    recall  f1-score   support
+
+           0       0.76      0.08      0.14       244
+           1       0.29      0.02      0.04        97
+           2       0.00      0.00      0.00         0
+           3       0.00      0.00      0.00         0
+           4       0.00      0.00      0.00         0
+
+    accuracy                           0.06       341
+   macro avg       0.21      0.02      0.04       341
+weighted avg       0.63      0.06      0.11       341
+
+-------------------------------- /CONFUSION MATRIX\ --------------------------------
+
+[[ 19   5  35  29 156]
+ [  6   2  17   5  67]
+ [  0   0   0   0   0]
+ [  0   0   0   0   0]
+ [  0   0   0   0   0]]
+
+------------------------------- /Accuracy Score\ -------------------------------
+
+0.062
+
+
+____ / CLASSIFICATION REPORTS for Race Category in cloth Class \ ____
+
+              precision    recall  f1-score   support
+
+           0       0.36      0.26      0.30       178
+           1       0.70      0.04      0.07       195
+           2       0.00      0.00      0.00         0
+           3       0.00      0.00      0.00         0
+           4       0.00      0.00      0.00         0
+
+    accuracy                           0.14       373
+   macro avg       0.21      0.06      0.07       373
+weighted avg       0.54      0.14      0.18       373
+
+-------------------------------- /CONFUSION MATRIX\ --------------------------------
+
+[[46  3 34 39 56]
+ [82  7 46 27 33]
+ [ 0  0  0  0  0]
+ [ 0  0  0  0  0]
+ [ 0  0  0  0  0]]
+
+------------------------------- /Accuracy Score\ -------------------------------
+
+0.142
+
+
+
+10-fold
+
+Fold1
+Train Subsampler Size: 2057
+Test Subsampler Size: 229
+
+Fold2
+
+Fold3
+
+Fold4
+
+Fold5
+
+Fold6
+
+Fold7
+Train Subsampler Size: 2058
+Test Subsampler Size: 228
+
+
+Fold8
+Train Subsampler Size: 2058
+Test Subsampler Size: 228
+
+Fold9
+Train Subsampler Size: 2058
+Test Subsampler Size: 228
+
+Fold10
+Train Subsampler Size: 2058
+Test Subsampler Size: 228
+
+Fold 1: 75.11 %
+Fold 2: 75.98 %
+Fold 3: 80.35 %
+Fold 4: 72.93 %
+Fold 5: 71.18 %
+Fold 6: 72.93 %
+Fold 7: 76.32 %
+Fold 8: 65.79 %
+Fold 9: 74.56 %
+Fold 10: 78.07 %
+Average: 74.32 %
