@@ -1,1 +1,1 @@
-# COMP 6721
+# AI Face Mask Detector
