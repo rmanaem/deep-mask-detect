@@ -1,4 +1,4 @@
-# Deep Mask Detect
+# Deep Learning Mask Detection
 
 A deep learning convolutional neural network (CNN) developed in Python using various libraries including [PyTorch](https://pytorch.org/), [pandas](https://pandas.pydata.org/), and [Matplotlib](https://matplotlib.org/) and trained on over 2000 images to identify and classify face images into 5 classes, namely:
 
@@ -8,7 +8,9 @@ A deep learning convolutional neural network (CNN) developed in Python using var
 4. No face mask (nfm)
 5. Surgical mask (srg)
 
-Development was done in two phases, in phase 1 imaging data was selected randomly to train the model however, in phase 2 a bias in gender and race was induced in the training of the model through imbalanced data.
+Development was done in two phases, in phase 1 imaging data was selected randomly to train the model however, in phase 2 a bias in gender and race was induced in the training of the model through imbalanced data. In addition a 10-fold cross validation was performed to test and analyze the consistency of the results.
+
+Note: due to the compute-heavy nature of the project, pipeline was written to run on [google colab](https://colab.research.google.com/) and its recommended to be executed on google colab however, the implementation can be modified to adjust to and run on any computing infrastructure.
 
 ## Data
 
