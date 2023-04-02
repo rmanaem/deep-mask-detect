@@ -66,3 +66,9 @@ convolution and a 2-dimensional batch normalization to accelerate deep neural ne
 - Weight decay: 1e-6
 
 - Dropout: 0.1
+
+## Evaluation
+
+The CNN model was assessed using various measurement including precision, recall, f1-score, and support. The evaluation results including scores, confusion matrix, training loss, etc for each phase can be found in the `appendix` directory of this repository, figure below only represents the overall evaluation scores from phase 1.
+
+<p alt="pie-chart" align="center"><a href="https://github.com/rmanaem/deep-mask-detect/blob/master/appendix/phase1/evaluation.png"><img src="https://github.com/rmanaem/deep-mask-detect/blob/master/appendix/phase1/evaluation.png?raw=true"/></a></p>
