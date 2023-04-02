@@ -8,12 +8,14 @@ A deep learning convolutional neural network (CNN) developed in Python using var
 4. No face mask (nfm)
 5. Surgical mask (srg)
 
+Development was done in two phases, in phase 1 imaging data was selected randomly to train the model however, in phase 2 a bias in gender and race was induced in the training of the model through imbalanced data.
+
 ## Data
 
 For training, validation, and assessment a combination of over 2000 images were taken from a [Kaggle dataset](http://kaggle.com/datasets/omkargurav/face-mask-dataset) and [GDeltaProj dataset](https://blog.gdeltproject.org/a-set-of-massive-new-datasets-for-cataloging-mask-appearances-on-television-news/).
 Figure below illustrates the percentage distribution of classes.
 
-<p alt="ER diagram-image" align="center"><a href="https://github.com/rmanaem/deep-mask-detect/blob/master/appendix/phase2/biased/download.png"><img src="https://github.com/rmanaem/deep-mask-detect/blob/master/appendix/phase2/biased/download.png?raw=true"/></a></p>
+<p alt="pie-chart" align="center"><a href="https://github.com/rmanaem/deep-mask-detect/blob/master/appendix/phase2/biased/download.png"><img src="https://github.com/rmanaem/deep-mask-detect/blob/master/appendix/phase2/biased/download.png?raw=true"/></a></p>
 To balance the dataset, roughly 2000 images were randomly selected and used.
 
 ## Preprocessing
