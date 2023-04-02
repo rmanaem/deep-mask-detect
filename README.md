@@ -48,3 +48,19 @@ The specifications of the CNN model are as follows:
 
 Each convolutional block is composed of a 2-dimensional
 convolution and a 2-dimensional batch normalization to accelerate deep neural networks with momentum 0.1. In addition, a 2-dimensional dropout regularization with probability of 0.1 was applied after calling the ReLU activation function.
+
+### Hypre-parameters
+
+- Loss function: cross-entropy, it summarizes the average difference between the actual and predicted probability distributions.
+
+- Batch size: 16
+
+- Epochs: 20
+
+- Optimizer: Adam
+
+- Learning rate: 0.00146
+
+- Weight decay: 1e-6
+
+- Dropout: 0.1
