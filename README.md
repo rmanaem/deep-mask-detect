@@ -15,3 +15,13 @@ Figure below illustrates the percentage distribution of classes.
 
 <p alt="ER diagram-image" align="center"><a href="https://github.com/rmanaem/deep-mask-detect/blob/master/appendix/phase2/biased/download.png"><img src="https://github.com/rmanaem/deep-mask-detect/blob/master/appendix/phase2/biased/download.png?raw=true"/></a></p>
 To balance the dataset, roughly 2000 images were randomly selected and used.
+
+## Preprocessing
+
+Preprocessing of images was done in three steps:
+
+- Image resizing
+- Image channel conversion to RGB
+- Normalization
+
+Images are first transformed into dimensions of 300 x 300. Then, the mean value of each RGB channel is calculated across the entire training data and subtracte3d from both the training and testing sets to normalize the image across each channel in the range [-1,1]. Each channel is then divided by its standard deviation that is computed over the training set. Images are then processed in batch sizes of 16. Generally, this practice helps reduce skewness in the dataset which in turn helps the model learn accurately.
